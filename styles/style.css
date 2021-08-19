@@ -1,0 +1,101 @@
+/* GLOBAL ==================================*/
+:root{
+    --purple: rgb(32, 15, 86);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container{
+    margin: auto;
+}
+
+/* HEADER ==================================*/
+#cabecalho{
+    display: block;
+
+    margin-bottom: 50px;
+}
+
+#pesquisa{
+    background-color: var(--purple);
+    border: none;
+    width: 500px;
+
+    margin-left: 10px;
+}
+
+/* MENU LATERAL ==================================*/
+aside{
+    background-color: #040517;
+
+    color: white;
+
+    width: 300px;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+
+    padding: 10px;
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#dados{
+    margin-left: 5px;
+}
+
+small{
+    color: grey;
+}
+
+#menu{
+    text-align: center;
+
+    color: gray;
+}
+
+li{
+    margin-top: 10px;
+}
+
+#dados, #foto-perfil{
+    display: inline-block;
+    text-align: left;
+}
+
+/* PRINCIPAL ==================================*/
+section{
+    background-color: var(--purple);
+    color: white;
+
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+    margin-left: 300px;
+
+    display: block;
+    position: fixed;
+}
+
+/* IMAGENS ==================================*/
+#foto-perfil{
+    width: 60px;
+    height: 60px;
+
+    border-radius: 5px;
+}
+
+/* RESPONSIVIDADE ==================================*/
