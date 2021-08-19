@@ -17,6 +17,10 @@ body{
     margin: auto;
 }
 
+main, header{
+    margin-left: 50px;
+}
+
 /* HEADER ==================================*/
 #cabecalho{
     display: block;
@@ -52,18 +56,21 @@ aside{
     justify-content: space-around;
 }
 
-#dados{
-    margin-left: 5px;
+#perfil{
+    margin: auto;
 }
 
-small{
+#dados{
     color: grey;
 }
 
-#menu{
-    text-align: center;
+.menu{
+    text-align: left;
 
-    color: gray;
+    list-style: none;
+    margin: auto;
+
+    color: grey;
 }
 
 li{
@@ -73,6 +80,10 @@ li{
 #dados, #foto-perfil{
     display: inline-block;
     text-align: left;
+}
+
+ul p {
+    user-select: none;
 }
 
 /* PRINCIPAL ==================================*/
@@ -90,12 +101,57 @@ section{
     position: fixed;
 }
 
+#playlists {
+    width: 800px;
+    height: 230px;
+
+    margin-top: 25px;
+
+    display: inline-grid;
+    grid-template-columns: 300px 300px 300px 300px;
+
+    overflow-x: scroll;
+}
+
+.album{
+    color: grey;
+}
+
 /* IMAGENS ==================================*/
 #foto-perfil{
     width: 60px;
     height: 60px;
 
+    border-radius: 10px;
+}
+
+#playlists img{
+    width: 270px;
+    height: 165px;
+
     border-radius: 5px;
 }
 
 /* RESPONSIVIDADE ==================================*/
+li:hover, #editar:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#playlists::-webkit-scrollbar{
+    height: 10px;
+}
+
+#playlists::-webkit-scrollbar-track{
+    background: rgb(40, 25, 90);
+    border-radius: 5px;
+}
+
+#playlists::-webkit-scrollbar-thumb{
+    background: mediumpurple;
+    border-radius: 5px;
+}
+
+#playlists::-webkit-scrollbar-thumb:hover{
+    background: rebeccapurple;
+}
