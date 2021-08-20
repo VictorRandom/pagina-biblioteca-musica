@@ -4,7 +4,7 @@
 }
 
 *{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -87,6 +87,7 @@ ul p {
 }
 
 /* PRINCIPAL ==================================*/
+/* PRINCIPAL PLAYLIST=========================*/
 section{
     background-color: var(--purple);
     color: white;
@@ -117,6 +118,48 @@ section{
     color: grey;
 }
 
+/* PRINCIPAL VISUALIZAÇÃO======================*/
+#visualizacao{
+    width: 400px;
+    height: 1px;
+
+    margin-top: 30px;
+
+    text-align: left;
+
+    display: block;
+}
+
+.view h4{
+    color: white;
+}
+
+.view{
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+
+    color: grey;
+}
+
+.singer{
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+/* PRINCIPAL MUSICAS==========================*/
+#musicas{
+    margin-left: 500px;
+
+    width: 400px;
+    height: 180px;
+    overflow-x: scroll;
+
+    display: flex;
+    flex-direction: column;
+}
+
 /* IMAGENS ==================================*/
 #foto-perfil{
     width: 60px;
@@ -128,6 +171,17 @@ section{
 #playlists img{
     width: 270px;
     height: 165px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+.view img{
+    width: 60px;
+    height: 60px;
+
+    object-fit: cover;
 
     border-radius: 5px;
 }
