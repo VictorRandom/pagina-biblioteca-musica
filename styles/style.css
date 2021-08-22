@@ -103,7 +103,7 @@ section{
 }
 
 #playlists {
-    width: 800px;
+    width: 900px;
     height: 230px;
 
     margin-top: 25px;
@@ -153,11 +153,25 @@ section{
     margin-left: 500px;
 
     width: 400px;
-    height: 180px;
+    height: 240px;
     overflow-x: scroll;
 
+    display: block;
+}
+
+#options h4{
+    color: white;
+}
+
+#options{
     display: flex;
-    flex-direction: column;
+
+    color: grey;
+}
+
+.track{
+    margin-top: 20px;
+     margin-left: 20px;
 }
 
 /* IMAGENS ==================================*/
@@ -186,26 +200,37 @@ section{
     border-radius: 5px;
 }
 
+#musicas #options .track img{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 10px;
+}
+
 /* RESPONSIVIDADE ==================================*/
 li:hover, #editar:hover{
     color: white;
     cursor: pointer;
 }
 
-#playlists::-webkit-scrollbar{
+#playlists::-webkit-scrollbar,
+#musicas::-webkit-scrollbar{
     height: 10px;
 }
 
-#playlists::-webkit-scrollbar-track{
+#playlists::-webkit-scrollbar-track,
+#musicas::-webkit-scrollbar-track{
     background: rgb(40, 25, 90);
     border-radius: 5px;
 }
 
-#playlists::-webkit-scrollbar-thumb{
+#playlists::-webkit-scrollbar-thumb,
+#musicas::-webkit-scrollbar-thumb{
     background: mediumpurple;
     border-radius: 5px;
 }
 
-#playlists::-webkit-scrollbar-thumb:hover{
+#playlists::-webkit-scrollbar-thumb:hover
+#musicas::-webkit-scrollbar-thumb:hover{
     background: rebeccapurple;
 }
